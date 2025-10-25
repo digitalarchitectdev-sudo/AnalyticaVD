@@ -1,3 +1,4 @@
+
 import { Mail, Phone, MapPin } from "lucide-react";
 
 export function ContactSection() {
@@ -18,15 +19,11 @@ export function ContactSection() {
                     <div className="space-y-4 text-lg inline-block text-left">
                         <div className="flex items-center gap-4">
                             <Mail className="h-6 w-6 text-primary" />
-                            <a href="mailto:contact@technexus.com" className="hover:text-primary transition-colors">contact@technexus.com</a>
+                            <a href="mailto:daivadnyadarshan@gmail.com" className="hover:text-primary transition-colors">daivadnyadarshan@gmail.com</a>
                         </div>
                         <div className="flex items-center gap-4">
                             <Phone className="h-6 w-6 text-primary" />
-                            <span>+1 (234) 567-890</span>
-                        </div>
-                        <div className="flex items-start gap-4">
-                            <MapPin className="h-6 w-6 text-primary mt-1" />
-                            <span>123 Tech Avenue, Innovation City, 12345</span>
+                            <span>+91 91138 51473</span>
                         </div>
                     </div>
                 </div>
