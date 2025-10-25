@@ -33,7 +33,7 @@ type EventDetail = {
 };
 
 const availableEvents: EventDetail[] = [
-    { id: 'wip-code', label: 'WIP Code', type: 'group', teamSize: 2 },
+    { id: 'vibe-code', label: 'Vibe Code', type: 'group', teamSize: 2 },
     { id: 'mystery-solving', label: 'Mystery Solving', type: 'group', teamSize: 4 },
     { id: 'tech-memes', label: 'Tech Meme’s', type: 'individual' },
     { id: 'quiz', label: 'Quiz', type: 'individual' },
