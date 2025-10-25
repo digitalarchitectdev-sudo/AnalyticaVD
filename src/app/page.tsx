@@ -5,7 +5,7 @@ import { Countdown } from "@/components/home/countdown";
 import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
-  const eventDate = "2025-10-25T09:00:00";
+  const eventDate = "2025-10-30T09:00:00";
 
   return (
     <div className="flex flex-col">
