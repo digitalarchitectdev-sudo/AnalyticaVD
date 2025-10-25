@@ -16,10 +16,9 @@ import { cn } from '@/lib/utils';
 import { useState } from 'react';
 
 const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/rules', label: 'Rules' },
-  { href: '/register', label: 'Register' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/#home', label: 'Home' },
+  { href: '/#rules', label: 'Rules' },
+  { href: '/#contact', label: 'Contact' },
 ];
 
 export function Header() {
@@ -27,6 +26,20 @@ export function Header() {
   const [isSheetOpen, setSheetOpen] = useState(false);
 
   const closeSheet = () => setSheetOpen(false);
+
+  const isHomePage = pathname === '/';
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (isHomePage) {
+      e.preventDefault();
+      const targetId = href.substring(2);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+      closeSheet();
+    }
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -41,10 +54,11 @@ export function Header() {
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
-              href={href}
+              href={isHomePage ? href : `/${href}`}
+              onClick={(e) => handleNavClick(e, href)}
               className={cn(
                 'transition-colors hover:text-primary',
-                pathname === href ? 'text-primary' : 'text-muted-foreground'
+                 'text-muted-foreground'
               )}
             >
               {label}
@@ -77,11 +91,11 @@ export function Header() {
                 {navLinks.map(({ href, label }) => (
                   <Link
                     key={href}
-                    href={href}
-                    onClick={closeSheet}
+                    href={isHomePage ? href : `/${href}`}
+                    onClick={(e) => handleNavClick(e, href)}
                     className={cn(
                       'transition-colors hover:text-primary w-full',
-                      pathname === href ? 'text-primary' : 'text-muted-foreground'
+                      'text-muted-foreground'
                     )}
                   >
                     {label}

@@ -3,6 +3,8 @@ import { AboutEvent } from "@/components/home/about-event";
 import { EventFeatures } from "@/components/home/event-features";
 import { Countdown } from "@/components/home/countdown";
 import { Separator } from "@/components/ui/separator";
+import { RulesSection } from "@/components/home/rules-section";
+import { ContactSection } from "@/components/home/contact-section";
 
 export default function Home() {
   const eventDate = "2025-10-30T09:00:00";
@@ -14,6 +16,10 @@ export default function Home() {
       <AboutEvent />
       <Separator className="my-12 md:my-20" />
       <EventFeatures />
+      <Separator className="my-12 md:my-20" />
+      <RulesSection />
+      <Separator className="my-12 md:my-20" />
+      <ContactSection />
     </div>
   );
 }

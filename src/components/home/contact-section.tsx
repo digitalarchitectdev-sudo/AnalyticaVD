@@ -1,4 +1,4 @@
-import { ContactForm } from "./contact-form";
+import { ContactForm } from "@/app/contact/contact-form";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Mail, Phone, MapPin, Twitter, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -9,13 +9,13 @@ const committeeMembers = [
   { name: "Michael Chen", role: "Marketing Head", avatar: "https://picsum.photos/seed/c3/100/100" },
 ];
 
-export default function ContactPage() {
+export function ContactSection() {
     return (
-        <div className="container mx-auto py-12 md:py-24 px-4">
+        <section id="contact" className="container mx-auto py-12 md:py-24 px-4">
              <div className="text-center mb-12">
-                <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">
+                <h2 className="text-4xl md:text-5xl font-bold font-headline text-primary">
                     Get In Touch
-                </h1>
+                </h2>
                 <p className="mt-4 text-lg text-muted-foreground">
                     Have questions? We'd love to hear from you.
                 </p>
@@ -23,7 +23,7 @@ export default function ContactPage() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
                 <div className="space-y-8">
-                    <h2 className="text-2xl font-bold font-headline">Contact Information</h2>
+                    <h3 className="text-2xl font-bold font-headline">Contact Information</h3>
                     <div className="space-y-4 text-lg">
                         <div className="flex items-center gap-4">
                             <Mail className="h-6 w-6 text-primary" />
@@ -39,7 +39,7 @@ export default function ContactPage() {
                         </div>
                     </div>
                     
-                    <h2 className="text-2xl font-bold font-headline pt-6">Organizing Committee</h2>
+                    <h3 className="text-2xl font-bold font-headline pt-6">Organizing Committee</h3>
                     <div className="space-y-4">
                         {committeeMembers.map(member => (
                             <div key={member.name} className="flex items-center gap-4">
@@ -55,7 +55,7 @@ export default function ContactPage() {
                         ))}
                     </div>
 
-                    <h2 className="text-2xl font-bold font-headline pt-6">Follow Us</h2>
+                    <h3 className="text-2xl font-bold font-headline pt-6">Follow Us</h3>
                      <div className="flex items-center gap-2">
                         <Button variant="outline" size="icon" asChild>
                             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
@@ -82,6 +82,6 @@ export default function ContactPage() {
                     <ContactForm />
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

@@ -1,4 +1,3 @@
-
 import {
   Accordion,
   AccordionContent,
@@ -8,13 +7,13 @@ import {
 import { eventRules } from "@/lib/rules";
 import { ListChecks } from "lucide-react";
 
-export default function RulesPage() {
+export function RulesSection() {
   return (
-    <div className="container mx-auto max-w-4xl py-12 md:py-24 px-4">
+    <section id="rules" className="container mx-auto max-w-4xl py-12 md:py-24 px-4">
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">
+        <h2 className="text-4xl md:text-5xl font-bold font-headline text-primary">
           Event Rules & Guidelines
-        </h1>
+        </h2>
         <p className="mt-4 text-lg text-muted-foreground">
           Please read the rules for each event carefully.
         </p>
@@ -39,6 +38,6 @@ export default function RulesPage() {
           </AccordionItem>
         ))}
       </Accordion>
-    </div>
+    </section>
   );
 }
