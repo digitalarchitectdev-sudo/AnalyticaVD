@@ -1,7 +1,6 @@
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Mail, Phone, MapPin, Twitter, Github, Linkedin } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const committeeMembers = [
   { name: "Alex Johnson", role: "Event Coordinator", avatar: "https://picsum.photos/seed/c1/100/100" },
@@ -21,7 +20,7 @@ export function ContactSection() {
                 </p>
             </div>
 
-            <div className="max-w-2xl mx-auto">
+            <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div className="space-y-8">
                     <h3 className="text-2xl font-bold font-headline">Contact Information</h3>
                     <div className="space-y-4 text-lg">
@@ -38,8 +37,10 @@ export function ContactSection() {
                             <span>123 Tech Avenue, Innovation City, 12345</span>
                         </div>
                     </div>
-                    
-                    <h3 className="text-2xl font-bold font-headline pt-6">Organizing Committee</h3>
+                </div>
+                
+                <div className="space-y-8">
+                    <h3 className="text-2xl font-bold font-headline">Organizing Committee</h3>
                     <div className="space-y-4">
                         {committeeMembers.map(member => (
                             <div key={member.name} className="flex items-center gap-4">
@@ -53,28 +54,6 @@ export function ContactSection() {
                                 </div>
                             </div>
                         ))}
-                    </div>
-
-                    <h3 className="text-2xl font-bold font-headline pt-6">Follow Us</h3>
-                     <div className="flex items-center gap-2">
-                        <Button variant="outline" size="icon" asChild>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                            <Twitter className="h-5 w-5" />
-                            <span className="sr-only">Twitter</span>
-                            </a>
-                        </Button>
-                        <Button variant="outline" size="icon" asChild>
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                            <Github className="h-5 w-5" />
-                            <span className="sr-only">GitHub</span>
-                            </a>
-                        </Button>
-                        <Button variant="outline" size="icon" asChild>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                            <Linkedin className="h-5 w-5" />
-                            <span className="sr-only">LinkedIn</span>
-                            </a>
-                        </Button>
                     </div>
                 </div>
             </div>
