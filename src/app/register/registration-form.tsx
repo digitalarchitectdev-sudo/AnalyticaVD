@@ -35,7 +35,8 @@ type EventDetail = {
 const availableEvents: EventDetail[] = [
     { id: 'wip-code', label: 'WIP Code', type: 'group', teamSize: 2 },
     { id: 'mystery-solving', label: 'Mystery Solving', type: 'group', teamSize: 4 },
-    { id: 'tech-memes-quiz', label: 'Tech Meme’s, Quiz', type: 'individual' },
+    { id: 'tech-memes', label: 'Tech Meme’s', type: 'individual' },
+    { id: 'quiz', label: 'Quiz', type: 'individual' },
     { id: 'tech-talk', label: 'Tech Talk', type: 'individual' },
     { id: 'tech-debate', label: 'Tech Debate', type: 'individual' },
 ];

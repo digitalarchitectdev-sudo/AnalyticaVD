@@ -13,10 +13,16 @@
       "imageHint": "detective board"
     },
     {
-      "id": "tech_memes_and_quiz",
-      "description": "Share a laugh with tech-related memes and test your knowledge.",
-      "imageUrl": "https://picsum.photos/seed/quiz_meme/600/400",
-      "imageHint": "quiz screen"
+      "id": "tech_memes",
+      "description": "Share a laugh with the funniest tech-related memes.",
+      "imageUrl": "https://images.unsplash.com/photo-1612448086333-02d35829040b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGF1Z2hpbmclMjBmYWNlfGVufDB8fHx8MTc2MTQxNzQ4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laughing face"
+    },
+    {
+      "id": "quiz",
+      "description": "Test your knowledge and compete in a fast-paced tech quiz.",
+      "imageUrl": "https://images.unsplash.com/photo-1751263317332-7368f7e98a91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxxdWl6JTIwYnV6emVyfGVufDB8fHx8MTc2MTQxNzQ4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "quiz buzzer"
     },
     {
       "id": "tech_talk_and_debate",
