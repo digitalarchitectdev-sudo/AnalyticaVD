@@ -7,8 +7,8 @@ export type EventRule = {
 
 export const eventRules: EventRule[] = [
   {
-    id: 'vibe-code',
-    name: 'Vibe Code',
+    id: 'wip-code',
+    name: 'WIP Code',
     rules: [
       'Can use any AI tool of your own.',
       'Team consist of only two members and once registered after that can not change partner.',

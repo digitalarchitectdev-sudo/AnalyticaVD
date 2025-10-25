@@ -1,6 +1,6 @@
 
 export function RegistrationSection() {
-  const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdS6bzKZaj1LNvphulOgL9vPx7UZh8Zc8zj2Am6pQtMRj20sA/viewform?embedded=true";
+  const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdS6bzKZaj1LNvPHulOgL9vPx7UZh8Zc8zj2Am6pQtMRj20sA/viewform?embedded=true";
 
   return (
     <section id="register" className="container mx-auto py-12 md:py-24 px-4">
