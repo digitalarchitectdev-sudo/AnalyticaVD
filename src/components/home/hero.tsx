@@ -15,9 +15,7 @@ export function Hero() {
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative container mx-auto text-right px-4">
-            <div className="bg-accent/20 inline-block rounded-full px-4 py-1 text-sm font-semibold text-white mb-4 border border-accent/30 shadow-sm">
-                The Tech Event of the Year
-            </div>
+            
             <p className="mt-4 max-w-2xl ml-auto text-lg md:text-xl text-slate-200">
                 Ignite Your Passion. Accelerate Your Future. Join the brightest minds in tech for a day of innovation, learning, and connection.
             </p>
