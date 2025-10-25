@@ -1,5 +1,10 @@
 import { z } from 'zod';
 
+export const teamMemberSchema = z.object({
+  name: z.string().min(3, { message: 'Team member name is required.' }),
+  phone: z.string().min(10, { message: 'A valid phone number is required.' }),
+});
+
 export const registrationSchema = z.object({
   fullName: z.string().min(3, { message: 'Full name must be at least 3 characters.' }),
   collegeName: z.string().min(3, { message: 'College name is required.' }),
@@ -9,6 +14,7 @@ export const registrationSchema = z.object({
   events: z.array(z.string()).refine(value => value.some(item => item), {
     message: "You have to select at least one event.",
   }),
+  teamMembers: z.array(teamMemberSchema).optional(),
   comments: z.string().optional(),
 });
 

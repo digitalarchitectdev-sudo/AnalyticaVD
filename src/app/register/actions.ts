@@ -5,7 +5,7 @@ import { registrationSchema, type RegistrationSchema } from '@/lib/schemas';
 
 export type FormState = {
   message: string;
-  fields?: Record<string, string>;
+  fields?: Record<string, any>; // Allow any for fields
   issues?: string[];
 };
 
@@ -14,10 +14,25 @@ export async function registerForEvent(
   data: FormData
 ): Promise<FormState> {
   const formData = Object.fromEntries(data);
-  const parsed = registrationSchema.safeParse({
+  
+  // Manually construct teamMembers array from FormData
+  const teamMembers = [];
+  let i = 0;
+  while (formData[`teamMembers[${i}].name`]) {
+    teamMembers.push({
+      name: formData[`teamMembers[${i}].name`],
+      phone: formData[`teamMembers[${i}].phone`],
+    });
+    i++;
+  }
+  
+  const payload = {
     ...formData,
     events: data.getAll('events'),
-  });
+    teamMembers: teamMembers.length > 0 ? teamMembers : undefined,
+  };
+  
+  const parsed = registrationSchema.safeParse(payload);
 
   if (!parsed.success) {
     const fields: Record<string, string> = {};
@@ -31,7 +46,7 @@ export async function registerForEvent(
     };
   }
   
-  const { fullName, email } = parsed.data;
+  const { fullName, email, teamMembers: parsedTeamMembers } = parsed.data;
 
   try {
     // Here you would typically:
@@ -43,7 +58,8 @@ export async function registerForEvent(
     const qrData = JSON.stringify({
       name: fullName,
       email: email,
-      event: "Analytica 2025"
+      event: "Analytica 2025",
+      team: parsedTeamMembers,
     });
 
     const encodedQrData = encodeURIComponent(qrData);
