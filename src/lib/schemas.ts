@@ -2,7 +2,7 @@ import { z } from 'zod';
 
 export const teamMemberSchema = z.object({
   name: z.string().min(3, { message: 'Team member name is required.' }),
-  phone: z.string().min(10, { message: 'A valid phone number is required.' }),
+  phone: z.string().min(10, { message: 'Please enter a valid 10-digit phone number.' }).regex(/^(?:\+91)?[6-9]\d{9}$/, { message: 'Please enter a valid 10-digit Indian phone number.' }),
 });
 
 export const registrationSchema = z.object({
@@ -10,7 +10,7 @@ export const registrationSchema = z.object({
   collegeName: z.string().min(3, { message: 'College name is required.' }),
   departmentYear: z.string().min(2, { message: 'Department and year are required.' }),
   email: z.string().email({ message: 'Please enter a valid email address.' }),
-  phone: z.string().min(10, { message: 'Please enter a valid phone number.' }).regex(/^\+?[0-9\s-()]+$/, { message: 'Invalid phone number format.' }),
+  phone: z.string().min(10, { message: 'Please enter a valid 10-digit phone number.' }).regex(/^(?:\+91)?[6-9]\d{9}$/, { message: 'Please enter a valid 10-digit Indian phone number.' }),
   events: z.array(z.string()).refine(value => value.some(item => item), {
     message: "You have to select at least one event.",
   }),

@@ -202,7 +202,7 @@ export function RegistrationForm() {
                   <FormItem>
                     <FormLabel>Phone Number</FormLabel>
                     <FormControl>
-                      <Input placeholder="+1 (555) 123-4567" {...field} />
+                      <Input placeholder="+91 98765 43210" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -281,7 +281,7 @@ export function RegistrationForm() {
                         <FormItem>
                           <FormLabel>Member {index + 2} Phone</FormLabel>
                           <FormControl>
-                            <Input placeholder="Team Member Phone" {...field} />
+                            <Input placeholder="+91 98765 43210" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
