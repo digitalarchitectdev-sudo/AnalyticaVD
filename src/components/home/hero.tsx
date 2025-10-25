@@ -1,17 +1,28 @@
+'use client';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { useRef, useEffect } from 'react';
 
 export function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.5; // Set playback to half speed for slow-motion effect
+    }
+  }, []);
+
   return (
     <section id="home" className="relative w-full h-[60vh] md:h-[80vh] flex items-end justify-end overflow-hidden">
         <video
+            ref={videoRef}
             src="/HeroVideo.mp4"
             autoPlay
             loop
             muted
             playsInline
-            className="absolute top-1/2 left-1/2 w-full h-full min-w-full min-h-full object-cover transform -translate-x-1/2 -translate-y-1/2 z-0"
+            className="absolute top-1/2 left-0 md:left-1/2 w-auto h-full min-w-full md:min-w-full min-h-full object-cover transform -translate-y-1/2 md:-translate-x-1/2 z-0"
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative container mx-auto text-right px-4 pb-20">
