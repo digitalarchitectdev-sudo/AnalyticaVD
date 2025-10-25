@@ -1,116 +1,82 @@
-'use client';
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Mail, Phone, MapPin, Twitter, Github, Linkedin } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
-import { useFormState } from 'react-dom';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { useEffect, useRef } from 'react';
+const committeeMembers = [
+  { name: "Alex Johnson", role: "Event Coordinator", avatar: "https://picsum.photos/seed/c1/100/100" },
+  { name: "Samantha Lee", role: "Lead Developer", avatar: "https://picsum.photos/seed/c2/100/100" },
+  { name: "Michael Chen", role: "Marketing Head", avatar: "https://picsum.photos/seed/c3/100/100" },
+];
 
-import { contactSchema, type ContactSchema } from '@/lib/schemas';
-import { submitContactForm, type ContactFormState } from './actions';
-import { useToast } from '@/hooks/use-toast';
+export function ContactSection() {
+    return (
+        <section id="contact" className="container mx-auto py-12 md:py-24 px-4">
+             <div className="text-center mb-12">
+                <h2 className="text-4xl md:text-5xl font-bold font-headline text-primary">
+                    Get In Touch
+                </h2>
+                <p className="mt-4 text-lg text-muted-foreground">
+                    Have questions? We'd love to hear from you.
+                </p>
+            </div>
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Button } from '@/components/ui/button';
-import { Send } from 'lucide-react';
+            <div className="max-w-2xl mx-auto">
+                <div className="space-y-8">
+                    <h3 className="text-2xl font-bold font-headline">Contact Information</h3>
+                    <div className="space-y-4 text-lg">
+                        <div className="flex items-center gap-4">
+                            <Mail className="h-6 w-6 text-primary" />
+                            <a href="mailto:contact@technexus.com" className="hover:text-primary transition-colors">contact@technexus.com</a>
+                        </div>
+                        <div className="flex items-center gap-4">
+                            <Phone className="h-6 w-6 text-primary" />
+                            <span>+1 (234) 567-890</span>
+                        </div>
+                        <div className="flex items-start gap-4">
+                            <MapPin className="h-6 w-6 text-primary mt-1" />
+                            <span>123 Tech Avenue, Innovation City, 12345</span>
+                        </div>
+                    </div>
+                    
+                    <h3 className="text-2xl font-bold font-headline pt-6">Organizing Committee</h3>
+                    <div className="space-y-4">
+                        {committeeMembers.map(member => (
+                            <div key={member.name} className="flex items-center gap-4">
+                                <Avatar className="h-12 w-12">
+                                    <AvatarImage src={member.avatar} alt={member.name} data-ai-hint="person photo" />
+                                    <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
+                                </Avatar>
+                                <div>
+                                    <p className="font-semibold">{member.name}</p>
+                                    <p className="text-sm text-muted-foreground">{member.role}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
 
-const initialState: ContactFormState = {
-  status: 'idle',
-  message: '',
-};
-
-export function ContactForm() {
-  const [state, formAction] = useFormState(submitContactForm, initialState);
-  const formRef = useRef<HTMLFormElement>(null);
-  const { toast } = useToast();
-
-  const form = useForm<ContactSchema>({
-    resolver: zodResolver(contactSchema),
-    defaultValues: {
-      name: '',
-      email: '',
-      message: '',
-    },
-  });
-
-  useEffect(() => {
-    if (state.status === 'success') {
-      toast({
-        title: 'Message Sent!',
-        description: state.message,
-      });
-      form.reset();
-      formRef.current?.reset();
-    } else if (state.status === 'error') {
-      toast({
-        title: 'Error',
-        description: state.message,
-        variant: 'destructive',
-      });
-    }
-  }, [state, toast, form]);
-
-  return (
-    <Card className="shadow-lg">
-      <CardHeader>
-        <CardTitle className="text-2xl font-bold font-headline">Send us a Message</CardTitle>
-        <CardDescription>Fill out the form and our team will get back to you within 24 hours.</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <Form {...form}>
-          <form ref={formRef} action={formAction} className="space-y-6">
-            <FormField
-              control={form.control}
-              name="name"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Your Name</FormLabel>
-                  <FormControl>
-                    <Input placeholder="What should we call you?" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Email Address</FormLabel>
-                  <FormControl>
-                    <Input type="email" placeholder="Where can we reach you?" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="message"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Your Message</FormLabel>
-                  <FormControl>
-                    <Textarea
-                      placeholder="Tell us what's on your mind..."
-                      className="resize-none"
-                      rows={5}
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <Button type="submit" size="lg" className="w-full">
-              Send Message <Send className="ml-2 h-5 w-5" />
-            </Button>
-          </form>
-        </Form>
-      </CardContent>
-    </Card>
-  );
+                    <h3 className="text-2xl font-bold font-headline pt-6">Follow Us</h3>
+                     <div className="flex items-center gap-2">
+                        <Button variant="outline" size="icon" asChild>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                            <Twitter className="h-5 w-5" />
+                            <span className="sr-only">Twitter</span>
+                            </a>
+                        </Button>
+                        <Button variant="outline" size="icon" asChild>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                            <Github className="h-5 w-5" />
+                            <span className="sr-only">GitHub</span>
+                            </a>
+                        </Button>
+                        <Button variant="outline" size="icon" asChild>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                            <Linkedin className="h-5 w-5" />
+                            <span className="sr-only">LinkedIn</span>
+                            </a>
+                        </Button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
 }

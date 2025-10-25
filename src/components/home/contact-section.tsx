@@ -1,4 +1,4 @@
-import { ContactForm } from "@/app/contact/contact-form";
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Mail, Phone, MapPin, Twitter, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -21,7 +21,7 @@ export function ContactSection() {
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+            <div className="max-w-2xl mx-auto">
                 <div className="space-y-8">
                     <h3 className="text-2xl font-bold font-headline">Contact Information</h3>
                     <div className="space-y-4 text-lg">
@@ -76,10 +76,6 @@ export function ContactSection() {
                             </a>
                         </Button>
                     </div>
-                </div>
-
-                <div>
-                    <ContactForm />
                 </div>
             </div>
         </section>
