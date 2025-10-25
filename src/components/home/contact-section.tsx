@@ -39,19 +39,19 @@ export function ContactSection() {
                     </div>
                 </div>
                 
-                <div className="space-y-8">
+                <div className="space-y-8 text-right">
                     <h3 className="text-2xl font-bold font-headline">Organizing Committee</h3>
                     <div className="space-y-4">
                         {committeeMembers.map(member => (
-                            <div key={member.name} className="flex items-center gap-4">
-                                <Avatar className="h-12 w-12">
-                                    <AvatarImage src={member.avatar} alt={member.name} data-ai-hint="person photo" />
-                                    <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
-                                </Avatar>
+                            <div key={member.name} className="flex items-center gap-4 justify-end">
                                 <div>
                                     <p className="font-semibold">{member.name}</p>
                                     <p className="text-sm text-muted-foreground">{member.role}</p>
                                 </div>
+                                <Avatar className="h-12 w-12">
+                                    <AvatarImage src={member.avatar} alt={member.name} data-ai-hint="person photo" />
+                                    <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
+                                </Avatar>
                             </div>
                         ))}
                     </div>
