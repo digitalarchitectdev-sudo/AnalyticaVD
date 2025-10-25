@@ -38,6 +38,10 @@ export function Header() {
         targetElement.scrollIntoView({ behavior: 'smooth' });
       }
       closeSheet();
+    } else {
+      // If on a different page, just navigate to the hash link on the homepage.
+      window.location.href = `/${href}`;
+      closeSheet();
     }
   };
 
@@ -54,7 +58,7 @@ export function Header() {
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
-              href={isHomePage ? href : `/${href}`}
+              href={href}
               onClick={(e) => handleNavClick(e, href)}
               className={cn(
                 'transition-colors hover:text-primary',
@@ -65,7 +69,7 @@ export function Header() {
             </Link>
           ))}
           <Button asChild>
-            <Link href="/register">Register Now</Link>
+            <Link href="/#register" onClick={(e) => handleNavClick(e, '/#register')}>Register Now</Link>
           </Button>
         </nav>
 
@@ -91,7 +95,7 @@ export function Header() {
                 {navLinks.map(({ href, label }) => (
                   <Link
                     key={href}
-                    href={isHomePage ? href : `/${href}`}
+                    href={href}
                     onClick={(e) => handleNavClick(e, href)}
                     className={cn(
                       'transition-colors hover:text-primary w-full',
@@ -102,7 +106,7 @@ export function Header() {
                   </Link>
                 ))}
                 <Button asChild className="w-full mt-4">
-                  <Link href="/register" onClick={closeSheet}>Register Now</Link>
+                  <Link href="/#register" onClick={(e) => handleNavClick(e, '/#register')}>Register Now</Link>
                 </Button>
               </nav>
             </SheetContent>

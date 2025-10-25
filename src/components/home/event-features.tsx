@@ -42,10 +42,10 @@ export function EventFeatures() {
                 </div>
               </CardHeader>
               <CardContent className="p-6 flex-1 flex flex-col">
-                <CardTitle className="font-headline text-xl capitalize mb-2">{feature.id.replace('_', ' ')}</CardTitle>
+                <CardTitle className="font-headline text-xl capitalize mb-2">{feature.id.replace(/_/g, ' ')}</CardTitle>
                 <CardDescription className="flex-1">{feature.description}</CardDescription>
                 <Button variant="link" asChild className="p-0 h-auto mt-4 self-start">
-                    <Link href="/register">
+                    <Link href="/#rules">
                         Learn More <ArrowRight className="ml-2 h-4 w-4"/>
                     </Link>
                 </Button>

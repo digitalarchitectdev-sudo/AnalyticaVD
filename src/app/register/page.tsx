@@ -1,6 +1,10 @@
 import { RegistrationForm } from './registration-form';
+import { redirect } from 'next/navigation';
 
 export default function RegisterPage() {
+  // This page is now part of the home page, so we redirect to the registration section.
+  redirect('/#register');
+  
   return (
     <div className="container mx-auto max-w-3xl py-12 md:py-24 px-4">
       <div className="text-center mb-12">
