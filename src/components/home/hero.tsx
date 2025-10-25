@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section id="home" className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-end overflow-hidden">
         <video
             src="/HeroVideo.mp4"
             autoPlay
@@ -14,17 +14,14 @@ export function Hero() {
             className="absolute top-1/2 left-1/2 w-full h-full min-w-full min-h-full object-cover transform -translate-x-1/2 -translate-y-1/2 z-0"
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="relative container mx-auto text-center px-4">
+        <div className="relative container mx-auto text-right px-4">
             <div className="bg-accent/20 inline-block rounded-full px-4 py-1 text-sm font-semibold text-white mb-4 border border-accent/30 shadow-sm">
                 The Tech Event of the Year
             </div>
-            <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tight text-white">
-                Analytica 2025
-            </h1>
-            <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-slate-200">
+            <p className="mt-4 max-w-2xl ml-auto text-lg md:text-xl text-slate-200">
                 Ignite Your Passion. Accelerate Your Future. Join the brightest minds in tech for a day of innovation, learning, and connection.
             </p>
-            <div className="mt-8 flex justify-center gap-4">
+            <div className="mt-8 flex justify-end gap-4">
                 <Button size="lg" asChild>
                     <Link href="/#register">
                         Register Now <ArrowRight className="ml-2 h-5 w-5" />
