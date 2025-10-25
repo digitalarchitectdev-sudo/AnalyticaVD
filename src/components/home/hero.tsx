@@ -25,7 +25,7 @@ export function Hero() {
             className="absolute top-1/2 left-0 md:left-1/2 w-auto h-full min-w-full md:min-w-full min-h-full object-cover transform -translate-y-1/2 md:-translate-x-1/2 z-0"
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="relative container mx-auto text-right px-4 pb-20">
+        <div className="relative container mx-auto text-right px-4 pb-8 md:pb-12">
             
             <p className="mt-4 max-w-2xl ml-auto text-lg md:text-xl text-slate-200">
                 Ignite Your Passion. Accelerate Your Future. Join the brightest minds in tech for a day of innovation, learning, and connection.
