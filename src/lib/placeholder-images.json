@@ -3,26 +3,26 @@
     {
       "id": "wip_code",
       "description": "Showcase your work-in-progress projects and get feedback.",
-      "imageUrl": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb2RlJTIwcmV2aWV3fGVufDB8fHx8MTc2MTQ0MDc5NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "code review"
+      "imageUrl": "https://images.unsplash.com/photo-1695891689981-0be360e84d3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb2RpbmclMjBjb2xsYWJvcmF0aW9ufGVufDB8fHx8MTc2MTQxMTkwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coding collaboration"
     },
     {
       "id": "mystery_solving",
       "description": "Put on your detective hat and solve intriguing tech mysteries.",
-      "imageUrl": "https://images.unsplash.com/photo-1580424742690-f7050bb93a52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtdXJkZXIlMjBteXN0ZXJ5fGVufDB8fHx8MTc2MTQ0MTEyMnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "mystery board"
+      "imageUrl": "https://images.unsplash.com/photo-1577401159468-3bbc7ee440b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXRlY3RpdmUlMjBib2FyZHxlbnwwfHx8fDE3NjEzNjkzNjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "detective board"
     },
     {
       "id": "tech_memes_and_quiz",
       "description": "Share a laugh with tech-related memes and test your knowledge.",
-      "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxxdWl6JTIwbmVvbnxlbnwwfHx8fDE3NjE0NDEyODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "quiz neon"
+      "imageUrl": "https://picsum.photos/seed/quiz_meme/600/400",
+      "imageHint": "quiz screen"
     },
     {
       "id": "tech_talk_and_debate",
       "description": "Engage in insightful talks and lively debates on the latest tech trends.",
-      "imageUrl": "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWNoJTIwdGFsa3xlbnwwfHx8fDE3NjE0NDEzOTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "tech talk"
+      "imageUrl": "https://images.unsplash.com/photo-1550305080-4e029753abcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb25mZXJlbmNlJTIwc3BlYWtlcnxlbnwwfHx8fDE3NjEzNzczMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "conference speaker"
     }
   ]
 }
