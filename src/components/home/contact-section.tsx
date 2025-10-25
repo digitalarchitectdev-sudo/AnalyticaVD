@@ -23,7 +23,7 @@ export function ContactSection() {
                         </div>
                         <div className="flex items-center gap-4">
                             <Phone className="h-6 w-6 text-primary" />
-                            <span>+91 91138 51473</span>
+                            <a href="tel:+919113851473" className="hover:text-primary transition-colors">+91 91138 51473</a>
                         </div>
                     </div>
                 </div>
