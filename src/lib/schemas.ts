@@ -7,7 +7,7 @@ export const teamMemberSchema = z.object({
 
 export const registrationSchema = z.object({
   fullName: z.string().min(3, { message: 'Full name must be at least 3 characters.' }),
-  collegeName: z.string().min(3, { message: 'College name is required.' }),
+  usn: z.string().length(10, { message: 'USN must be 10 characters.' }),
   departmentYear: z.string().min(2, { message: 'Department and year are required.' }),
   email: z.string().email({ message: 'Please enter a valid email address.' }),
   phone: z.string().min(10, { message: 'Please enter a valid 10-digit phone number.' }).regex(/^(?:\+91)?[6-9]\d{9}$/, { message: 'Please enter a valid 10-digit Indian phone number.' }),

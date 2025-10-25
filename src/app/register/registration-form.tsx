@@ -52,7 +52,7 @@ export function RegistrationForm() {
     resolver: zodResolver(registrationSchema),
     defaultValues: {
       fullName: '',
-      collegeName: '',
+      usn: '',
       departmentYear: '',
       email: '',
       phone: '',
@@ -158,12 +158,12 @@ export function RegistrationForm() {
               />
               <FormField
                 control={form.control}
-                name="collegeName"
+                name="usn"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>College Name</FormLabel>
+                    <FormLabel>USN</FormLabel>
                     <FormControl>
-                      <Input placeholder="University of Technology" {...field} />
+                      <Input placeholder="1AB23CS001" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
