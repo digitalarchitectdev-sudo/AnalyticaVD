@@ -1,18 +1,17 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import Image from 'next/image';
 
 export function Hero() {
   return (
-    <section id="home" className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center">
-        <Image 
-            src="https://picsum.photos/seed/hero/1920/1080"
-            alt="A vibrant tech conference with students networking."
-            fill
-            className="object-cover"
-            data-ai-hint="tech conference"
-            priority
+    <section id="home" className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
+        <video
+            src="/HeroVideo.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute top-1/2 left-1/2 w-full h-full min-w-full min-h-full object-cover transform -translate-x-1/2 -translate-y-1/2 z-0"
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative container mx-auto text-center px-4">

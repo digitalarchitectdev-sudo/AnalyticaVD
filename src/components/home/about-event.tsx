@@ -16,7 +16,7 @@ export function AboutEvent() {
             </div>
             <div className="flex justify-center">
                 <Image 
-                    src="https://picsum.photos/seed/about/600/400"
+                    src="/About_Us.svg"
                     alt="Students collaborating on a project."
                     width={600}
                     height={400}

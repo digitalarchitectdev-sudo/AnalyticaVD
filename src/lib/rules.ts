@@ -34,23 +34,21 @@ export const eventRules: EventRule[] = [
   {
     id: "wip-code",
     name: "WIP Code",
-    organizedBy: "_________________________",
-    date: "_________________________",
-    venue: "_________________________",
+    organizedBy: "CSE(DS)",
+    date: "30-Oct-2025",
+    venue: "MITk",
     eligibility: {
-      openTo: "____________________ department/year",
+      openTo: "Data Science department [2nd, 3rd and Final Year]",
       team: "individuals / teams",
       maxMembers: 2
     },
     registration: {
-      starts: "__________________",
-      ends: "__________________",
-      spot: "allowed / not allowed"
+      starts: "28-Oct-2025",
+      ends: "30-Oct-2025",
+      spot: "Not allowed"
     },
     competitionFormat: [
-        "Round 1: __________________________ (Duration: __________ minutes)",
-        "Round 2: __________________________ (Duration: __________ minutes)",
-        "Round 3 (Final): __________________________ (Duration: __________ minutes)",
+        "Round 1 (Final): Duration: 1 Hour",
     ],
     judgingCriteria: [
       "Creativity / Innovation",
