@@ -13,9 +13,9 @@ export function ContactSection() {
             </div>
 
             <div className="max-w-2xl mx-auto">
-                <div className="space-y-8">
+                <div className="space-y-8 text-center">
                     <h3 className="text-2xl font-bold font-headline">Contact Information</h3>
-                    <div className="space-y-4 text-lg">
+                    <div className="space-y-4 text-lg inline-block text-left">
                         <div className="flex items-center gap-4">
                             <Mail className="h-6 w-6 text-primary" />
                             <a href="mailto:contact@technexus.com" className="hover:text-primary transition-colors">contact@technexus.com</a>
