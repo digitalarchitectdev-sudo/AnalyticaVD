@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "workshops",
+      "description": "Interactive workshops with industry experts.",
+      "imageUrl": "https://images.unsplash.com/photo-1531421693921-03e5aa6ee863?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3b3Jrc2hvcCUyMHRlYW18ZW58MHx8fHwxNzYxMzE4NTI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "workshop team"
+    },
+    {
+      "id": "coding_challenges",
+      "description": "Exciting coding competitions with amazing prizes.",
+      "imageUrl": "https://images.unsplash.com/photo-1649451844813-3130d6f42f8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb2RpbmclMjBjb21wZXRpdGlvbnxlbnwwfHx8fDE3NjEzMjk3MTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coding competition"
+    },
+    {
+      "id": "guest_speakers",
+      "description": "Inspiring talks from tech visionaries and leaders.",
+      "imageUrl": "https://images.unsplash.com/photo-1498189263721-d42d6bcc2ad1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwdWJsaWMlMjBzcGVha2luZ3xlbnwwfHx8fDE3NjEzNzQ5OTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "public speaking"
+    },
+    {
+      "id": "networking",
+      "description": "Connect with peers, professionals, and recruiters.",
+      "imageUrl": "https://images.unsplash.com/photo-1675716921224-e087a0cca69a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZW9wbGUlMjBuZXR3b3JraW5nfGVufDB8fHx8MTc2MTM2Mzc4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "people networking"
+    }
+  ]
 }
