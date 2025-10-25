@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section id="home" className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-end overflow-hidden">
+    <section id="home" className="relative w-full h-[60vh] md:h-[80vh] flex items-end justify-end overflow-hidden">
         <video
             src="/HeroVideo.mp4"
             autoPlay
@@ -14,7 +14,7 @@ export function Hero() {
             className="absolute top-1/2 left-1/2 w-full h-full min-w-full min-h-full object-cover transform -translate-x-1/2 -translate-y-1/2 z-0"
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="relative container mx-auto text-right px-4">
+        <div className="relative container mx-auto text-right px-4 pb-20">
             
             <p className="mt-4 max-w-2xl ml-auto text-lg md:text-xl text-slate-200">
                 Ignite Your Passion. Accelerate Your Future. Join the brightest minds in tech for a day of innovation, learning, and connection.
