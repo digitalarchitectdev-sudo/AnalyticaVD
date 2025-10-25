@@ -32,7 +32,7 @@ export function Header() {
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold text-lg">
           <Code2 className="h-6 w-6 text-primary" />
-          <span className="font-headline">EventNexus</span>
+          <span className="font-headline">Analytica</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -68,7 +68,7 @@ export function Header() {
                 <SheetTitle>
                   <Link href="/" onClick={closeSheet} className="flex items-center gap-2 font-bold text-lg">
                     <Code2 className="h-6 w-6 text-primary" />
-                    <span className="font-headline">EventNexus</span>
+                    <span className="font-headline">Analytica</span>
                   </Link>
                 </SheetTitle>
               </SheetHeader>

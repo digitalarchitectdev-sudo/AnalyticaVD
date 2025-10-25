@@ -6,7 +6,7 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'EventNexus - TechXcel 2025',
+  title: 'Analytica - TechXcel 2025',
   description: 'Join us for TechXcel 2025, the ultimate college tech event. Register now for workshops, coding challenges, and more!',
 };
 
