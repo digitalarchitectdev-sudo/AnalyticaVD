@@ -8,7 +8,7 @@ export function AboutEvent() {
           </h2>
           <div className="w-24 h-1.5 bg-accent mx-auto mt-4 mb-6 rounded-full"></div>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            TechXcel 2025 is the premier technology conference for college students, designed to foster innovation and collaboration. Whether you're a budding developer, a design enthusiast, or an aspiring entrepreneur, this event is your platform to learn from industry leaders, showcase your skills, and network with like-minded peers. Join us for an unforgettable experience that will shape your tech journey.
+            Analytica 2025 is the premier technology conference for college students, designed to foster innovation and collaboration. Whether you're a budding developer, a design enthusiast, or an aspiring entrepreneur, this event is your platform to learn from industry leaders, showcase your skills, and network with like-minded peers. Join us for an unforgettable experience that will shape your tech journey.
           </p>
         </div>
       </div>

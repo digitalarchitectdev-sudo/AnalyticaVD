@@ -10,7 +10,7 @@ export function Hero() {
                 The Tech Event of the Year
             </div>
             <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tight text-primary-foreground bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary pb-2">
-                TechXcel 2025
+                Analytica 2025
             </h1>
             <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground">
                 Ignite Your Passion. Accelerate Your Future. Join the brightest minds in tech for a day of innovation, learning, and connection.

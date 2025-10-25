@@ -6,8 +6,8 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Analytica - TechXcel 2025',
-  description: 'Join us for TechXcel 2025, the ultimate college tech event. Register now for workshops, coding challenges, and more!',
+  title: 'Analytica 2025',
+  description: 'Join us for Analytica 2025, the ultimate college tech event. Register now for WIP Code, Mystery Solving, Tech Meme’s, Quiz, Tech Talk, and Tech Debate!',
 };
 
 export default function RootLayout({

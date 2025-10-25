@@ -53,7 +53,7 @@ export default function RegistrationSuccessPage() {
           </div>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild size="lg">
-                <a href={qrCodeUrl} download={`TechXcel2025_QRCode_${name.replace(/\s+/g, '_')}.png`}>
+                <a href={qrCodeUrl} download={`Analytica2025_QRCode_${name.replace(/\s+/g, '_')}.png`}>
                     <Download className="mr-2 h-5 w-5" />
                     Download QR Code
                 </a>

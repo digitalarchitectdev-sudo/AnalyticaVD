@@ -25,10 +25,11 @@ import { useToast } from '@/hooks/use-toast';
 import { ArrowRight } from 'lucide-react';
 
 const availableEvents = [
-    { id: 'workshop-ai', label: 'AI/ML Workshop' },
-    { id: 'coding-challenge', label: 'Live Coding Challenge' },
-    { id: 'guest-talk-1', label: 'Keynote by Tech CEO' },
-    { id: 'networking-session', label: 'Networking Session' },
+    { id: 'wip-code', label: 'WIP Code' },
+    { id: 'mystery-solving', label: 'Mystery Solving' },
+    { id: 'tech-memes-quiz', label: 'Tech Meme’s, Quiz' },
+    { id: 'tech-talk', label: 'Tech Talk' },
+    { id: 'tech-debate', label: 'Tech Debate' },
 ];
 
 const initialState: FormState = {

@@ -43,7 +43,7 @@ export async function registerForEvent(
     const qrData = JSON.stringify({
       name: fullName,
       email: email,
-      event: "TechXcel 2025"
+      event: "Analytica 2025"
     });
 
     const encodedQrData = encodeURIComponent(qrData);
