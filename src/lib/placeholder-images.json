@@ -4,31 +4,43 @@
       "id": "wip_code",
       "description": "Showcase your work-in-progress projects and get feedback.",
       "imageUrl": "https://images.unsplash.com/photo-1695891689981-0be360e84d3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb2RpbmclMjBjb2xsYWJvcmF0aW9ufGVufDB8fHx8MTc2MTQxMTkwOXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "coding collaboration"
+      "imageHint": "coding collaboration",
+      "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdS6bzKZaj1LNvPHulOgL9vPx7UZh8Zc8zj2Am6pQtMRj20sA/viewform?embedded=true"
     },
     {
       "id": "mystery_solving",
       "description": "Put on your detective hat and solve intriguing tech mysteries.",
       "imageUrl": "https://images.unsplash.com/photo-1577401159468-3bbc7ee440b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXRlY3RpdmUlMjBib2FyZHxlbnwwfHx8fDE3NjEzNjkzNjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "detective board"
+      "imageHint": "detective board",
+      "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfZsITSe8q0xSr1wMFA6bpAgL4x541ne6wZjFN31ZrbUzqnLQ/viewform?embedded=true"
     },
     {
       "id": "tech_memes",
       "description": "Share a laugh with the funniest tech-related memes.",
       "imageUrl": "https://images.unsplash.com/photo-1612448086333-02d35829040b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGF1Z2hpbmclMjBmYWNlfGVufDB8fHx8MTc2MTQxNzQ4NXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "laughing face"
+      "imageHint": "laughing face",
+      "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfazAJfuhdOEETxIx4PrKDdG4ojUAJDujX4myoGaxCS294zfQ/viewform?embedded=true"
     },
     {
       "id": "quiz",
       "description": "Test your knowledge and compete in a fast-paced tech quiz.",
       "imageUrl": "https://images.unsplash.com/photo-1751263317332-7368f7e98a91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxxdWl6JTIwYnV6emVyfGVufDB8fHx8MTc2MTQxNzQ4NXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "quiz buzzer"
+      "imageHint": "quiz buzzer",
+      "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSday7hVw6zV9TOLlc8WAiUVguQMLPk1TWbVIqrQrtWwQo5OhQ/viewform?embedded=true"
     },
     {
-      "id": "tech_talk_and_debate",
-      "description": "Engage in insightful talks and lively debates on the latest tech trends.",
+      "id": "tech_talk",
+      "description": "Engage in insightful talks on the latest tech trends.",
       "imageUrl": "https://images.unsplash.com/photo-1550305080-4e029753abcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb25mZXJlbmNlJTIwc3BlYWtlcnxlbnwwfHx8fDE3NjEzNzczMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "conference speaker"
+      "imageHint": "conference speaker",
+      "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSc-NnkOoOPCVookavjTHBsRztxJ1AHKS2P3GaM7oJP2HMN4kw/viewform?embedded=true"
+    },
+    {
+      "id": "tech_debate",
+      "description": "Engage in lively debates on the latest tech trends.",
+      "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkZWJhdGV8ZW58MHx8fHwxNzYxNDI3ODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "people debating",
+      "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeKpV6LS-Pl-QxjNRxieqztiDu6G4J0h9bICtluUjR3emBAIA/viewform?embedded=true"
     }
   ]
 }
