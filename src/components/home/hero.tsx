@@ -32,7 +32,7 @@ export function Hero() {
             </p>
             <div className="mt-8 flex justify-end gap-4">
                 <Button size="lg" asChild>
-                    <Link href="/#register">
+                    <Link href="/#features">
                         Register Now <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
                 </Button>

@@ -70,7 +70,7 @@ export function Header() {
             </Link>
           ))}
           <Button asChild>
-            <Link href="/#register" onClick={(e) => handleNavClick(e, '/#register')}>Register Now</Link>
+            <Link href="/#features" onClick={(e) => handleNavClick(e, '/#features')}>Register Now</Link>
           </Button>
         </nav>
 
@@ -107,7 +107,7 @@ export function Header() {
                   </Link>
                 ))}
                 <Button asChild className="w-full mt-4">
-                  <Link href="/#register" onClick={(e) => handleNavClick(e, '/#register')}>Register Now</Link>
+                  <Link href="/#features" onClick={(e) => handleNavClick(e, '/#features')}>Register Now</Link>
                 </Button>
               </nav>
             </SheetContent>
