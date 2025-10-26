@@ -23,7 +23,7 @@ export type EventRule = {
     first: string;
     second: string;
     certificates: string;
-  };
+  }; 
   coordinators: {
     name: string;
     contact: string;
@@ -71,35 +71,33 @@ export const eventRules: EventRule[] = [
       "The organizers reserve the right to make changes if necessary."
     ],
     prizes: {
-      first: "___________________",
-      second: "___________________",
+      first: "will be given",
+      second: "will be given",
       certificates: "Certificate for all participants."
     },
     coordinators: [
-        { name: "Name 1", contact: "__________" },
-        { name: "Name 2", contact: "__________" }
+        { name: "Sumukha Nayak", contact: "7022590747" },
+        { name: "Prajwal", contact: "8722524974" }
     ]
   },
   {
     id: "mystery-solving",
     name: "Mystery Solving",
-    organizedBy: "_________________________",
-    date: "_________________________",
-    venue: "_________________________",
+    organizedBy: "CSE(DS)",
+    date: "30-10-25",
+    venue: "Activity Room",
     eligibility: {
-      openTo: "____________________ department/year",
+      openTo: "CSE(DS) department/[2nd,3rd,4th]year",
       team: "teams",
       maxMembers: 4
     },
     registration: {
-      starts: "__________________",
-      ends: "__________________",
-      spot: "allowed / not allowed"
+      starts: "27-10-25",
+      ends: "29-10-25",
+      spot: "not allowed"
     },
     competitionFormat: [
-        "Round 1: __________________________ (Duration: __________ minutes)",
-        "Round 2: __________________________ (Duration: __________ minutes)",
-        "Round 3 (Final): __________________________ (Duration: __________ minutes)",
+        "Round 1 (Final):(Duration: 1 hour)",
     ],
     judgingCriteria: [
       "Creativity / Innovation",
@@ -120,34 +118,32 @@ export const eventRules: EventRule[] = [
       "The organizers reserve the right to make changes if necessary."
     ],
     prizes: {
-      first: "___________________",
-      second: "___________________",
+      first: "will be given",
+      second: "will be given",
       certificates: "Certificate for all participants."
     },
     coordinators: [
-        { name: "Name 1", contact: "__________" },
-        { name: "Name 2", contact: "__________" }
+        { name: "Bhoomika Shetty", contact: "8105368471" },
+        { name: "Ashritha v", contact: "914865190" }
     ]
   },
     {
     id: "tech-memes",
     name: "Tech Meme",
-    organizedBy: "_________________________",
-    date: "_________________________",
-    venue: "_________________________",
+    organizedBy: "CSE(DS)",
+    date: "30-10-25",
+    venue: "student lounge",
     eligibility: {
-      openTo: "____________________ department/year",
-      team: "individuals / teams",
+      openTo: "Data Science department [2nd, 3rd and Final Year]",
+      team: "individuals",
     },
     registration: {
-      starts: "__________________",
-      ends: "__________________",
-      spot: "allowed / not allowed"
+      starts: "27-10-25",
+      ends: "29-10-25",
+      spot: "not allowed"
     },
     competitionFormat: [
-        "Round 1: __________________________ (Duration: __________ minutes)",
-        "Round 2: __________________________ (Duration: __________ minutes)",
-        "Round 3 (Final): __________________________ (Duration: __________ minutes)",
+         "Round 3 (Final): (Duration:1 hour)",
     ],
     judgingCriteria: [
       "Creativity / Innovation",
@@ -168,19 +164,19 @@ export const eventRules: EventRule[] = [
       "The organizers reserve the right to make changes if necessary."
     ],
     prizes: {
-      first: "___________________",
-      second: "___________________",
+      first: "will be given",
+      second: "will be given",
       certificates: "Certificate for all participants."
     },
     coordinators: [
-        { name: "Name 1", contact: "__________" },
-        { name: "Name 2", contact: "__________" }
+         { name: "Sumukha Nayak", contact: "7022590747" },
+        { name: "Prajwal", contact: "8722524974" }
     ]
   },
   {
     id: "quiz",
     name: "Quiz",
-    organizedBy: "_________________________",
+    organizedBy: "CSE(DS)",
     date: "_________________________",
     venue: "_________________________",
     eligibility: {
